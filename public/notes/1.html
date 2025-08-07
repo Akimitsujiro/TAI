@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Description character</title>
+        <title>Mô tả nhân vật</title>
         <link rel="stylesheet" href="/css/notes.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +8,19 @@
     <body>
         <div id="main">
             <div id="content">
-                <h2>Character description</h2>
-                <p>Used to add the character description and the rest that the AI should 
-                    know. For example, you can add information about the world in which the action takes place and describe 
-                    the characteristics for the character you are playing for. Usually it all takes 200-350 tokens.</p>
-                <h3>Methods and format</h3>
-                <p>For most Kobold's models the easiest way is to use a free form for description, and in each sentence it is desirable to specify the name of the character. 
-                    The entire description should be in one line without hyphenation. For examle:<br><br>
-                    <i>Chloe is a female elf. Chloe wears black-white maid dress with green collar and red glasses. Chloe has medium length black hair. 
-                        Chloe's personality is...</i> etc.</p>
-                <h3>W++ format</h3>
-                <p>This is an economic format used for KoboldAI. Details here: <a target="_blank" href="https://github.com/KoboldAI/KoboldAI-Client/wiki/Pro-Tips">Pro-Tips</a></p>
-                <p>Experimental W++ editor can be turned on with the checkbox. Text which does not fit into W++ format will be appended after W++ section.</p>
-                <p>Each W++ item (e.g. a character) has <em>type</em> and <em>name</em> (the first two fields), as well as <em>properties</em> and their <em>values</em> (the following rows). Type is usually "Character". Once type and name are filled in, you can add properties. A property can have multiple values, e.g. Hobbies("Video games"+"Reading").</p>
-                <p>Suggestions for type and property names are given, but are not the only options.</p>
-                <hr><br>A list of tags that are replaced when sending to generate:<br><br>
-                {{user}} and &lt;USER&gt; are replaced by User Name<br>
-                {{char}} and &lt;BOT&gt; are replaced by Character Name
+                <h2>Mô tả nhân vật</h2>
+                <p>Được sử dụng để thêm mô tả nhân vật và những thông tin còn lại mà AI cần biết. Ví dụ: bạn có thể thêm thông tin về thế giới nơi hành động diễn ra và mô tả các đặc điểm của nhân vật mà bạn đang điều khiển. Thông thường, tất cả cần 200-350 token.</p>
+                <h3>Phương pháp và định dạng</h3>
+                <p>Đối với hầu hết các mô hình Kobold, cách dễ nhất là sử dụng dạng tự do để mô tả, và trong mỗi câu, nên ghi rõ tên nhân vật. Toàn bộ phần mô tả nên nằm trong một dòng, không có dấu gạch nối. Ví dụ:<br><br>
+                    <i>Chloe là một nữ yêu tinh. Chloe mặc váy hầu gái đen trắng, cổ xanh lá cây và đeo kính đỏ. Chloe có mái tóc đen dài vừa phải. Tính cách của Chloe là...</i> etc.</p>
+                <h3>Định dạng W++</h3>
+                <p>Đây là định dạng kinh tế được sử dụng cho KoboldAI. Chi tiết tại đây: <a target="_blank" href="https://github.com/KoboldAI/KoboldAI-Client/wiki/Pro-Tips">Mẹo chuyên nghiệp</a></p>
+                <p>Trình soạn thảo W++ thử nghiệm có thể được bật bằng hộp kiểm. Văn bản không phù hợp với định dạng W++ sẽ được thêm vào sau phần W++.</p>
+                <p>Mỗi mục W++ (ví dụ: một ký tự) có <em>kiểu</em> và <em>tên</em> (hai trường đầu tiên), cũng như <em>properties</em> và của họ <em>giá trị</em> (các hàng tiếp theo). Kiểu thường là "Nhân vật". Sau khi điền kiểu và tên, bạn có thể thêm thuộc tính. Một thuộc tính có thể có nhiều giá trị, ví dụ: Sở thích ("Trò chơi điện tử" + "Đọc").</p>
+                <p>Có những gợi ý về loại và tên thuộc tính nhưng không phải là lựa chọn duy nhất.</p>
+                <hr><br>Danh sách các thẻ được thay thế khi gửi để tạo:<br><br>
+                {{user}} và &lt;USER&gt; được thay thế bằng Tên người dùng<br>
+                {{char}} và &lt;BOT&gt; được thay thế bằng Tên nhân vật
             </div>
         </div>
     </body>
